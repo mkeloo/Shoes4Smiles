@@ -52,7 +52,7 @@ const Navbar = () => {
           return (
             <li
               key={id}
-              className="p-4 hover:text-[#ff3535] text-[17px] md:text-sm font-bold duration-300 link link-underline link-underline-black"
+              className="p-4 hover:text-[#ff3535] lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
             >
               {title}
             </li>
