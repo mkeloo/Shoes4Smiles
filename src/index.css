@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 .logo {
   font-family: 'Pacifico', cursive;
@@ -11,12 +13,27 @@
 
 @layer base {
   p {
-    @apply font-[Poppins];
+    @apply font-[Rubik];
   }
 
   /* * {
     @apply bg-[#FFF5E4];
   } */
+}
+
+.bg-pattern {
+  background-color: #ffe4b4;
+  opacity: 1;
+  background-image: radial-gradient(#ff6200 0.9px, #ffe4b4 0.9px);
+  background-size: 18px 18px;
+}
+
+.z-behind {
+  z-index: -50;
+}
+
+.z-front {
+  z-index: 99;
 }
 
 /* SideBar CSS Feature */
@@ -43,11 +60,41 @@
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
+  /* background: linear-gradient(
+    -45deg,
     #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11096d 91.61%
+    #ff003c -78.47%,
+    #685aff 91.61%
+  ); */
+  /* background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  ); */
+
+  background: linear-gradient(
+    315deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+
+  background: linear-gradient(
+    -173deg,
+    rgba(255, 87, 0, 1) 0%,
+    rgb(238, 222, 0) 100%
+  );
+
+  /* background: linear-gradient(
+    34deg,
+    rgba(167, 58, 180, 1) 0%,
+    rgba(255, 53, 0, 1) 100%
+  ); */
+
+  background: rgb(255, 70, 0);
+  background: linear-gradient(
+    241deg,
+    rgba(255, 70, 0, 1) 0%,
+    rgba(250, 194, 19, 1) 100%
   );
 }
 
@@ -81,6 +128,14 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+.font-poppins {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
 }
 
 @keyframes slide-top {
