@@ -57,7 +57,7 @@ const NavbarSide = () => {
 
   return (
     // lg screen classes: md:rounded-none md:mt-0  border-[5px] border-orange-600
-    <div className="fixed z-front bg-[#FFF1D8]  h-[80px] flex justify-between w-screen items-center px-5 text-orange-600 font-poppins ">
+    <div className="fixed z-front bg-[#FFF1D8]  h-[80px] flex justify-between w-screen items-center px-5 pr-7 text-orange-600 font-poppins ">
       {/* text-[#3120E0] */}
       <h1 className="w-full text-3xl font-bold text-orange-600 logo ml-3 mb-2 duration-500">
         <span className="">
