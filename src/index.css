@@ -17,19 +17,25 @@
   }
 
   /* * {
-    @apply bg-[#FFF5E4];
+    @apply bg-[#ffe4b4];
   } */
 }
 
 .bg-pattern {
-  background-color: #ffe4b4;
-  opacity: 1;
-  background-image: radial-gradient(#ff6200 0.9px, #ffe4b4 0.9px);
-  background-size: 18px 18px;
+  background-color: #fff5e4;
+  opacity: 0.8;
+  background-image: radial-gradient(
+      #ff5600 0.8500000000000001px,
+      transparent 0.8500000000000001px
+    ),
+    radial-gradient(#ff5600 0.8500000000000001px, #fff5e4 0.8500000000000001px);
+  background-size: 34px 34px;
+  background-position: 0 0, 17px 17px;
+  z-index: -1;
 }
 
-.z-behind {
-  z-index: -50;
+.z-middle {
+  z-index: 30;
 }
 
 .z-front {
@@ -38,24 +44,12 @@
 
 /* SideBar CSS Feature */
 
-.bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
-}
-
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
     #e88c8c -278.56%,
-    #a882e5 -78.47%,
-    #ff3300 91.61%
+    #ceb0ff -78.47%,
+    #ff4516 91.61%
   );
 }
 

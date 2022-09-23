@@ -57,12 +57,12 @@ const NavbarSide = () => {
 
   return (
     // lg screen classes: md:rounded-none md:mt-0  border-[5px] border-orange-600
-    <div className="fixed z-front lg:bg-[#FFF5E4] bg-black-gradient-2 shadow-lg rounded-full  mt-4   h-[80px] flex justify-between w-screen items-center px-5 text-blue-600 font-poppins ">
+    <div className="fixed z-front bg-[#FFF1D8]  h-[80px] flex justify-between w-screen items-center px-3 text-orange-600 font-poppins ">
       {/* text-[#3120E0] */}
-      <h1 className="w-full text-3xl font-bold text-blue-600 logo ml-3 mb-2 duration-500">
+      <h1 className="w-full text-3xl font-bold text-orange-600 logo ml-3 mb-2 duration-500">
         <span className="">
           Shoes
-          <span className="text-5xl   text-orange-600">4</span>
+          <span className="text-5xl   text-blue-600">4</span>
           Smiles
         </span>
       </h1>
@@ -74,7 +74,7 @@ const NavbarSide = () => {
           return (
             <li
               key={id}
-              className="p-4 hover:text-white lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
+              className="p-4 hover:text-[#ff3333] lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
             >
               {title}
             </li>
@@ -119,7 +119,7 @@ const NavbarSide = () => {
                   id === links.length ? 'mr-0' : 'mb-4'
                 } text-[#FFF5E4]`}
               >
-                <span className=" font-bold hover:text-yellow-300 pb-2 ">
+                <span className=" font-bold hover:text-blue-500 pb-2 ">
                   <a href={url}>{title}</a>
                 </span>
               </li>
