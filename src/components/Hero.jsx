@@ -10,7 +10,7 @@ const Hero = () => {
   const images = [
     {
       id: 1,
-      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      src: 'https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png',
       alt: 'cat',
     },
     {
@@ -69,7 +69,11 @@ const Hero = () => {
           return (
             <SwiperSlide key={id} className="z-back">
               <div className="z-back">
-                <img src={src} alt={alt} className="z-back" />
+                <img
+                  src={src}
+                  alt={alt}
+                  className="object-cover h-full w-full absolute -z-10"
+                />
               </div>
             </SwiperSlide>
           );
