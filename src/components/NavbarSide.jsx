@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
 // import logo from '../assets/logo.png';
 
@@ -32,27 +31,27 @@ const NavbarSide = () => {
   const socials = [
     {
       id: 1,
-      url: 'https://www.github.com',
-      icon: <FaGithub size={30} />,
-      text: 'GitHub',
+      url: 'https://www.instagram.com/ufshoes4smiles/?hl=en',
+      icon: <FaInstagram size={30} />,
+      text: 'Instagram',
     },
     {
       id: 2,
-      url: 'https://www.linkedin.com/in/mokshkeloo',
-      icon: <FaLinkedin size={30} />,
-      text: 'LinkedIn',
+      url: 'https://www.facebook.com/ufshoes4smiles',
+      icon: <FaFacebook size={30} />,
+      text: 'Facebook',
     },
     {
       id: 3,
-      url: 'mailto:mokshkeloo@gmail.com',
+      url: 'mailto:ufshoes4smiles@gmail.com',
       icon: <HiOutlineMail size={30} />,
       text: 'Email',
     },
     {
       id: 4,
-      url: 'https://resume-mokshkeloo.netlify.app',
-      icon: <BsFillPersonLinesFill size={30} />,
-      text: 'Resume',
+      url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
+      icon: <HiUserGroup size={30} />,
+      text: 'GroupMe',
     },
   ];
 
@@ -172,7 +171,7 @@ const NavbarSide = () => {
             return (
               <li
                 key={id}
-                className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-500 rounded-md bg-orange-600"
+                className="w-[180px] h-[60px] flex justify-between items-center ml-[-125px] hover:ml-[-2px] duration-500 rounded-md bg-orange-600"
               >
                 <a
                   className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-blue-500 text-gray-200"
