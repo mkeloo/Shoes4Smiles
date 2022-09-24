@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import 'swiper/css';
