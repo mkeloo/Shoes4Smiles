@@ -43,7 +43,7 @@ const Hero = () => {
             <img
               src={logo}
               alt="/"
-              className="flex items-center justify-center object-fit w-[290px] h-[290px]  mb-2"
+              className="flex items-center justify-center object-fit w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]  mb-2"
             />
           </div>
           <p className=" text-orange-600 font-rubik px-2 lg:text-2xl text-xl">
