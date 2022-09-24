@@ -1,9 +1,10 @@
 import React from 'react';
-// import logo from '../assets/logo.png';
+import logo from '../assets/logo.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const Hero = () => {
   const images = [
@@ -37,28 +38,32 @@ const Hero = () => {
   return (
     <div className="w-full h-screen ">
       <div className="w-full top-[80px] h-[90%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center ">
-        <h1 className="text-6xl link link-underline link-underline-black">
-          Decentralized
-        </h1>
-        <h1 className="py-2 link link-underline link-underline-black">
-          <span className="blue">Trading</span> Protocol
-        </h1>
-        <p className="text-3xl py-4">
-          Guaranteed liquidity trading for millions of users and top Ethereum
-          applications.
-        </p>
+        <div className="flex flex-col justify-center  w-full p-2">
+          <div className="flex items-center justify-center">
+            <img
+              src={logo}
+              alt="/"
+              className="flex items-center justify-center object-fit w-[290px] h-[290px]  mb-2"
+            />
+          </div>
+          <p className=" text-orange-600 font-rubik px-2 lg:text-2xl text-xl">
+            Providing shoes and other necessities to people in local,
+            disadvantaged communities.
+          </p>
+        </div>
         <div>
-          <button className="m-2">Use Defi</button>
-          <button className="m-2">FAQ</button>
+          <button className="m-2 text-xl p-4">Use Defi</button>
+          <button className="m-2 text-xl p-4">FAQ</button>
         </div>
       </div>
 
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
+        autoplay={{ delay: 3000 }}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        loop={true}
         className="object-cover absolute h-screen w-screen z-back opacity-80"
-        autoplay={{ delay: 2000 }}
       >
         {images.map(({ id, src, alt }) => {
           return (
