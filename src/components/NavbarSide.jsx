@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import logo from '../assets/Pics/logo2.png';
 // import { Link } from 'react-router-dom';
 // import logo from '../assets/logo.png';
 
@@ -91,13 +92,14 @@ const NavbarSide = () => {
     text-blue-600 font-poppins "
     >
       {/* text-[#3120E0] */}
-      <h1 className="w-full text-3xl font-bold text-orange-600 logo ml-3 mb-2 duration-500">
+      {/* <h1 className="w-full text-3xl font-bold text-orange-600 logo ml-3 mb-2 duration-500">
         <span className="">
           Shoes
           <span className="text-5xl   text-blue-600">4</span>
           Smiles
         </span>
-      </h1>
+      </h1> */}
+      <img src={logo} alt="logo" className="w-[220px] h-[70px]" />
 
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
@@ -117,7 +119,7 @@ const NavbarSide = () => {
       {/* Hamburger Menu */}
       <div
         onClick={() => setIsMenuOpen(true)}
-        className="md:hidden z-[100] text-[#3120E0] cursor-pointer"
+        className="md:hidden z-[100] text-orange-600 cursor-pointer"
       >
         {isMenuOpen && nav ? (
           <AiOutlineClose size={30} />
