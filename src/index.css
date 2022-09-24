@@ -53,53 +53,6 @@
   );
 }
 
-.bg-black-gradient-2 {
-  /* background: linear-gradient(
-    -45deg,
-    #ffffff -278.56%,
-    #ff003c -78.47%,
-    #685aff 91.61%
-  ); */
-  /* background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
-  ); */
-
-  background: linear-gradient(
-    315deg,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
-  );
-
-  background: linear-gradient(
-    -173deg,
-    rgba(255, 87, 0, 1) 0%,
-    rgb(238, 222, 0) 100%
-  );
-
-  /* background: linear-gradient(
-    34deg,
-    rgba(167, 58, 180, 1) 0%,
-    rgba(255, 53, 0, 1) 100%
-  ); */
-
-  background: rgb(255, 70, 0);
-  background: linear-gradient(
-    241deg,
-    rgba(255, 70, 0, 1) 0%,
-    rgba(250, 194, 19, 1) 100%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
 .bg-discount-gradient {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 }

@@ -6,8 +6,9 @@ import About from './components/About';
 
 function App() {
   // bg-[#FFF5E4]
+  // bg-[#FFF1D8]
   return (
-    <div className="bg-[#FFF1D8]">
+    <div className="bg-[#ffd5b4]">
       <NavbarSide />
       <Hero />
       <About />
