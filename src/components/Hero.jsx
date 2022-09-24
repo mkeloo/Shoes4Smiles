@@ -1,47 +1,79 @@
 import React from 'react';
-import Skydiving from '../assets/Skydiving.svg';
 import logo from '../assets/logo.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Hero = () => {
+  const images = [
+    {
+      id: 1,
+      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      alt: 'cat',
+    },
+    {
+      id: 2,
+      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      alt: 'cat',
+    },
+    {
+      id: 3,
+      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      alt: 'cat',
+    },
+    {
+      id: 4,
+      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      alt: 'cat',
+    },
+    {
+      id: 5,
+      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
+      alt: 'cat',
+    },
+  ];
+
   return (
-    <div className="z-middle flex flex-col justify-between w-full font-rubik h-screen text-blue-600 text-center md:text-left">
-      {/* <img src={HeroBackground} alt="/" /> */}
-
-      <div className="grid md:grid-cols-2 max-w-screen-xl m-auto pt-24 pb-12 ">
-        <div className="flex flex-col justify-center  w-full p-2">
-          <div className="flex items-center justify-center">
-            {/* <h1 className="pt-1 pb-6 text-7xl lg:text-8xl font-bold">
-              <span className="text-lightColor">UF</span>
-            </h1> */}
-            <img
-              src={logo}
-              alt="/"
-              className="flex items-center justify-center object-fit w-[300px] h-[300px]  mb-2"
-            />
-          </div>
-
-          {/* <h1 className="pt-1 pb-6 text-5xl lg:text-7xl font-bold logo">
-            <span className="">
-              Shoes
-              <span className="lg:text-8xl text-7xl text-orange-500 ">4</span>
-              Smiles
-            </span>
-          </h1> */}
-
-          <p className=" text-gray-400 font-rubik  lg:text-2xl text-xl">
-            Providing shoes and other necessities to people in local,
-            disadvantaged communities 🐊 👟
-          </p>
-        </div>
-
-        <div className="flex items-center justify-center">
-          <img
-            src={Skydiving}
-            alt="hero"
-            className="w-[85%] rounded-full duration-500 hover:ring-orange-500 hover:ring-8 hover:scale-105"
-          />
+    <div className="w-full h-screen ">
+      <div className="w-full top-[80px] h-[90%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center ">
+        <h1 className="text-6xl link link-underline link-underline-black">
+          Decentralized
+        </h1>
+        <h1 className="py-2 link link-underline link-underline-black">
+          <span className="blue">Trading</span> Protocol
+        </h1>
+        <p className="text-3xl py-4">
+          Guaranteed liquidity trading for millions of users and top Ethereum
+          applications.
+        </p>
+        <div>
+          <button className="m-2">Use Defi</button>
+          <button className="m-2">FAQ</button>
         </div>
       </div>
+
+      <Swiper
+        modules={[Pagination]}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        className="object-cover absolute h-screen w-screen z-back opacity-80"
+        autoplay={{ delay: 2000 }}
+      >
+        {images.map(({ id, src, alt }) => {
+          return (
+            <SwiperSlide key={id} className="z-back">
+              <div className="z-back">
+                <img src={src} alt={alt} className="z-back" />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+
+      {/* <div className="z-back flex flex-col justify-between w-full font-rubik h-screen text-blue-600 text-center md:text-left">
+        Insert COde After this */}
+      {/* <div>  */}
     </div>
   );
 };

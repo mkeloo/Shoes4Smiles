@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
 // import logo from '../assets/logo.png';
 
@@ -25,6 +28,33 @@ const NavbarSide = () => {
       document.removeEventListener('mousedown', checkIfClickedOutside);
     };
   }, [isMenuOpen]);
+
+  const socials = [
+    {
+      id: 1,
+      url: 'https://www.github.com',
+      icon: <FaGithub size={30} />,
+      text: 'GitHub',
+    },
+    {
+      id: 2,
+      url: 'https://www.linkedin.com/in/mokshkeloo',
+      icon: <FaLinkedin size={30} />,
+      text: 'LinkedIn',
+    },
+    {
+      id: 3,
+      url: 'mailto:mokshkeloo@gmail.com',
+      icon: <HiOutlineMail size={30} />,
+      text: 'Email',
+    },
+    {
+      id: 4,
+      url: 'https://resume-mokshkeloo.netlify.app',
+      icon: <BsFillPersonLinesFill size={30} />,
+      text: 'Resume',
+    },
+  ];
 
   const links = [
     {
@@ -58,7 +88,7 @@ const NavbarSide = () => {
   return (
     // lg screen classes: md:rounded-none md:mt-0  border-[5px] border-orange-600
     <div
-      className="fixed z-front bg-[#f7aa80] shadow-lg  h-[80px] flex justify-between w-screen items-center px-2 pr-7 
+      className="fixed z-front bg-[#f7aa80] shadow-lg  h-[80px] flex justify-between w-screen items-center px-2 pr-4 
     text-blue-600 font-poppins "
     >
       {/* text-[#3120E0] */}
@@ -130,6 +160,32 @@ const NavbarSide = () => {
             ))}
           </ul>
         )}
+      </div>
+
+      {/* Social icons */}
+      {/* Fixed Media Query for Medium devices */}
+
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          {socials.map((social) => {
+            const { id, url, icon, text } = social;
+            return (
+              <li
+                key={id}
+                className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-500 rounded-md bg-orange-600"
+              >
+                <a
+                  className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-blue-500 text-gray-200"
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {text} {icon}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

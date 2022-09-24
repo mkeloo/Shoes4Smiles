@@ -42,6 +42,10 @@
   z-index: 99;
 }
 
+.z-back {
+  z-index: -99;
+}
+
 /* SideBar CSS Feature */
 
 .bg-black-gradient {
