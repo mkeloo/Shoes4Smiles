@@ -4,7 +4,6 @@ import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import logo from '../assets/Pics/logo2.png';
 // import { Link } from 'react-router-dom';
-// import logo from '../assets/logo.png';
 
 const NavbarSide = () => {
   // Navbar State
@@ -60,12 +59,12 @@ const NavbarSide = () => {
     {
       id: 1,
       title: 'Home',
-      url: '#',
+      url: 'home',
     },
     {
       id: 2,
       title: 'About',
-      url: '#',
+      url: 'about',
     },
     {
       id: 3,
@@ -104,14 +103,23 @@ const NavbarSide = () => {
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
         {links.map((link) => {
-          const { id, title } = link;
+          const { id, url, title } = link;
           return (
+            // <Link
+            //   to={url}
+            //   smooth={true}
+            //   duration={500}
+            //   spy={true}
+            //   exact="true"
+            //   offset={-90}
+            // >
             <li
               key={id}
               className="p-4 hover:text-[#ff3333] lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
             >
               {title}
             </li>
+            // </Link>
           );
         })}
         <button className="p-3 bg-orange-600 rounded-lg font-bold text-white shadow-md shadow-orange-900  hover:scale-110 hover:text-orange-200 duration-300">
