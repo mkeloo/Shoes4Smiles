@@ -5,7 +5,7 @@ import Shoe3 from '../assets/Pics/shoeDr3.jpg';
 
 const Shoedrive = () => {
   return (
-    <section id="shoedrive" className="w-full h-full bg-orange-300">
+    <section className="w-full h-full bg-orange-300">
       <div className="container mx-auto p-10 min-h-[400px]">
         <div className="flex flex-col lg:space-x-20 lg:flex-row">
           <div className="grid grid-cols-2 space-x-6 max-w-2xl  items-center lg:space-x-12">

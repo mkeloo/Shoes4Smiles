@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../assets/Pics/Untitled_Artwork.png';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
+
 import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
