@@ -103,7 +103,7 @@ const NavbarSide = () => {
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
         {links.map((link) => {
-          const { id, url, title } = link;
+          const { id, title } = link;
           return (
             // <Link
             //   to={url}
