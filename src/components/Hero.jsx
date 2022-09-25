@@ -1,59 +1,97 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/Pics/Untitled_Artwork.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
+import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
+import pic5 from '../assets/Pics/pic5.jpg';
+import pic4 from '../assets/Pics/pic4.jpg';
+import pic2 from '../assets/Pics/pic2.jpg';
+import pic3 from '../assets/Pics/pic3.jpg';
+
 const Hero = () => {
-  const images = [
+  const socials = [
     {
       id: 1,
-      src: 'https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png',
-      alt: 'cat',
+      url: 'https://www.instagram.com/ufshoes4smiles/?hl=en',
+      icon: <FaInstagram size={35} />,
+      text: 'Instagram',
     },
     {
       id: 2,
-      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
-      alt: 'cat',
+      url: 'https://www.facebook.com/ufshoes4smiles',
+      icon: <FaFacebook size={35} />,
+      text: 'Facebook',
     },
     {
       id: 3,
-      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
-      alt: 'cat',
+      url: 'mailto:ufshoes4smiles@gmail.com',
+      icon: <HiOutlineMail size={35} />,
+      text: 'Email',
     },
     {
       id: 4,
-      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
-      alt: 'cat',
+      url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
+      icon: <HiUserGroup size={35} />,
+      text: 'GroupMe',
+    },
+  ];
+
+  const images = [
+    {
+      id: 1,
+      src: pic5,
+      alt: 'pic5',
     },
     {
-      id: 5,
-      src: 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg',
-      alt: 'cat',
+      id: 2,
+      src: pic2,
+      alt: 'pic2',
+    },
+    {
+      id: 3,
+      src: pic3,
+      alt: 'pic3',
+    },
+    {
+      id: 4,
+      src: pic4,
+      alt: 'pic4',
     },
   ];
 
   return (
     <div className="w-full h-screen ">
-      <div className="w-full top-[80px] h-[90%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center ">
+      <div className="w-full top-[-80px] h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50">
         <div className="flex flex-col justify-center  w-full p-2">
           <div className="flex items-center justify-center">
             <img
               src={logo}
               alt="/"
-              className="flex items-center justify-center object-fit w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]  mb-2"
+              className="opacity-60 flex items-center justify-center object-fit w-[500px] h-[300px] lg:w-[700px] lg:h-[500px]  mb-2"
             />
           </div>
-          <p className=" text-orange-600 font-rubik px-2 lg:text-2xl text-xl">
+          <p className=" text-white font-rubik px-2 mt-0 lg:text-2xl text-xl">
             Providing shoes and other necessities to people in local,
             disadvantaged communities.
           </p>
         </div>
-        <div>
-          <button className="m-2 text-xl p-4">Use Defi</button>
-          <button className="m-2 text-xl p-4">FAQ</button>
+        <div className="w-[250px] lg:hidden">
+          <ul className="flex p-6 bg-[#f7aa80] mt-8 rounded-full justify-between items-center">
+            {socials.map(({ id, url, icon, text }) => {
+              return (
+                <li key={id}>
+                  <a href={url} target="_blank" rel="noreferrer">
+                    {icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
 
@@ -63,7 +101,7 @@ const Hero = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         loop={true}
-        className="object-cover absolute h-screen w-screen z-back opacity-80"
+        className="object-cover  absolute h-screen top-[70px] w-screen z-back "
       >
         {images.map(({ id, src, alt }) => {
           return (
@@ -72,7 +110,7 @@ const Hero = () => {
                 <img
                   src={src}
                   alt={alt}
-                  className="object-cover h-full w-full absolute -z-10"
+                  className="object-cover h-full w-full  absolute -z-10"
                 />
               </div>
             </SwiperSlide>

@@ -69,17 +69,17 @@ const NavbarSide = () => {
     },
     {
       id: 3,
-      title: 'Resources',
+      title: 'Join Us',
       url: '#',
     },
     {
       id: 4,
-      title: 'Pictures',
+      title: 'Contact',
       url: '#',
     },
     {
       id: 5,
-      title: 'Contact',
+      title: 'Calendar',
       url: '#',
     },
   ];
@@ -99,7 +99,7 @@ const NavbarSide = () => {
           Smiles
         </span>
       </h1> */}
-      <img src={logo} alt="logo" className="w-[220px] h-[70px]" />
+      <img src={logo} alt="logo" className="w-[220px] lg:ml-5 ml-2 h-[70px] " />
 
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
@@ -114,12 +114,15 @@ const NavbarSide = () => {
             </li>
           );
         })}
+        <button className="p-3 bg-orange-600 rounded-lg font-bold text-white shadow-md shadow-orange-900  hover:scale-110 hover:text-orange-200 duration-300">
+          Shoe Drive
+        </button>
       </ul>
 
       {/* Hamburger Menu */}
       <div
         onClick={() => setIsMenuOpen(true)}
-        className="md:hidden z-[100] text-orange-600 cursor-pointer"
+        className="md:hidden z-[100] text-orange-800 cursor-pointer"
       >
         {isMenuOpen && nav ? (
           <AiOutlineClose size={30} />
@@ -173,10 +176,10 @@ const NavbarSide = () => {
             return (
               <li
                 key={id}
-                className="w-[180px] h-[60px] flex justify-between items-center ml-[-125px] hover:ml-[-2px] duration-500 rounded-md bg-orange-600"
+                className="w-[180px] h-[60px] flex justify-between items-center ml-[-125px] hover:ml-[-2px] duration-500 rounded-md bg-[#f7aa80]"
               >
                 <a
-                  className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-blue-500 text-gray-200"
+                  className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-blue-800 text-white"
                   href={url}
                   target="_blank"
                   rel="noreferrer"
