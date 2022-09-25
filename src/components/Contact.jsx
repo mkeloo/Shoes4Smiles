@@ -39,16 +39,18 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col h-screen max-w-[600px] w-full mt-6"
       >
         <div className="pb-7 group">
-          <h1 className="lg:text-6xl md:text-4xl text-blue-500 sm:text-3xl text-2xl font-bold py-1 ">
+          <h1 className="lg:text-6xl md:text-4xl text-blue-500  text-3xl font-bold py-6 pb-4">
             Contact Us
           </h1>
-          <p className="text-black py-1 mt-5 text-xl">
+          <p className="text-md md:text-lg lg:text-2xl">
             If you have any questions or would like to get involved, please
             submit the form below or email us at{' '}
-            <span className="text-xl font-bold">ufshoes4smiles@gmail.com</span>
+            <span className="text-md md:text-lg lg:text-2xl font-bold">
+              ufshoes4smiles@gmail.com
+            </span>
           </p>
         </div>
         <input
@@ -67,7 +69,7 @@ const Contact = () => {
           placeholder="Email"
         />
         <textarea
-          className="bg-[#ccd6f6] border-2 rounded-lg p-3 flex border-gray-300 mb-4"
+          className="bg-[#ccd6f6] border-2 rounded-lg p-2 flex border-gray-300 mb-4"
           name="message"
           rows="8"
           value={value}
@@ -79,7 +81,7 @@ const Contact = () => {
           onMouseLeave={() => setSmile(false)}
           type="submit"
           value="Send"
-          className="text-black group md:text-lg border-4 px-5 py-4 border-black my-2 flex items-center justify-center hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-lg"
+          className="text-black group md:text-lg border-4 px-3 py-2 md:px-3 md:py-4 border-black my-2 flex items-center justify-center hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-lg"
         >
           Let's Collaborate
           <span className="duration-300">

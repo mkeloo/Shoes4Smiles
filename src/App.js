@@ -3,10 +3,11 @@ import React from 'react';
 import NavbarSide from './components/NavbarSide';
 import Hero from './components/Hero';
 import About from './components/About';
-import Shoedrive from './components/Shoedrive';
-import CalendarFeature from './components/CalendarFeature';
+// import Shoedrive from './components/Shoedrive';
+// import CalendarFeature from './components/CalendarFeature';
 import Contact from './components/Contact';
-import JoinUs from './components/JoinUs';
+// import JoinUs from './components/JoinUs';
+import JoinChange from './components/JoinChange';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
       <NavbarSide />
       <Hero />
       <About />
-      <Shoedrive />
-      <JoinUs />
+      {/* <Shoedrive /> */}
+      {/* <JoinUs /> */}
+      <JoinChange />
       <Contact />
-      <CalendarFeature />
+      {/* <CalendarFeature /> */}
       <Footer />
     </div>
   );

@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import logo from '../assets/Pics/logo2.png';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const NavbarSide = () => {
   // Navbar State
@@ -94,29 +94,37 @@ const NavbarSide = () => {
 
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
-        {links.map((link) => {
-          const { id, title } = link;
+        {links.map(({ id, url, title }) => {
           return (
-            // <Link
-            //   to={url}
-            //   smooth={true}
-            //   duration={500}
-            //   spy={true}
-            //   exact="true"
-            //   offset={-90}
-            // >
-            <li
-              key={id}
-              className="p-4 hover:text-[#ff3333] lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
+            <Link
+              to={url}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-90}
             >
-              {title}
-            </li>
-            // </Link>
+              <li
+                key={id}
+                className="p-4 hover:text-[#ff3333] lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
+              >
+                {title}
+              </li>
+            </Link>
           );
         })}
-        <button className="p-3 bg-orange-600 rounded-lg font-bold text-white shadow-md shadow-orange-900  hover:scale-110 hover:text-orange-200 duration-300">
-          Shoe Drive
-        </button>
+        <Link
+          to={'shoedrive'}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-90}
+        >
+          <button className="p-3 bg-orange-600 rounded-lg font-bold text-white shadow-md shadow-orange-900  hover:scale-110 hover:text-orange-200 duration-300">
+            Shoe Drive
+          </button>
+        </Link>
       </ul>
 
       {/* Hamburger Menu */}
@@ -142,25 +150,25 @@ const NavbarSide = () => {
         {isMenuOpen && (
           <ul className="list-non flex flex-col justify-end items-center flex-1 ">
             {links.map(({ id, title, url }) => (
-              // <Link
-              //     to={url}
-              //     smooth={true}
-              //     duration={500}
-              //     spy={true}
-              //     exact="true"
-              //     offset={-80}
-              //   >
-              <li
-                key={id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  id === links.length ? 'mr-0' : 'mb-4'
-                } text-[#FFF5E4]`}
+              <Link
+                to={url}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
               >
-                <span className=" font-bold hover:text-blue-500 pb-2 ">
-                  <a href={url}>{title}</a>
-                </span>
-              </li>
-              // </Link>
+                <li
+                  key={id}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                    id === links.length ? 'mr-0' : 'mb-4'
+                  } text-[#FFF5E4]`}
+                >
+                  <span className="font-bold hover:text-blue-500 pb-2 ">
+                    <a href={url}>{title}</a>
+                  </span>
+                </li>
+              </Link>
             ))}
           </ul>
         )}

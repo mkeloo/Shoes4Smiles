@@ -32,7 +32,8 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-orange-800 w-full  justify-between grid grid-cols-3 items-center  mx-auto py-16 px-4  text-gray-300">
+    //
+    <div className="bg-orange-800 h-full w-full justify-between grid-cols-1 grid md:grid-cols-3 items-center  mx-auto py-4 px-3 md:py-16 md:px-4  text-gray-300">
       {/* <div className=""> */}
       {/* <h1 className="pt-1 pb-6 text-5xl lg:text-7xl font-bold logo">
           <span className="text-blue-500">
@@ -40,7 +41,7 @@ const Footer = () => {
           </span>
         </h1> */}
 
-      <div className="flex justify-center">
+      <div className="md:flex hidden justify-center">
         <img
           src={Footer2}
           alt=""
@@ -57,7 +58,7 @@ const Footer = () => {
           />
         </div>
         <div className="flex justify-center">
-          <div className="flex justify-between w-[400px] my-6 mr-2">
+          <div className="flex justify-between w-full md:w-[400px] my-6 mr-2">
             {socials.map((social) => {
               const { id, url, icon, text } = social;
               return (
@@ -74,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="md:flex hidden justify-center">
         <img
           src={Footer2}
           alt=""
