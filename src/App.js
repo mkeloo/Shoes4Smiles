@@ -7,6 +7,7 @@ import Shoedrive from './components/Shoedrive';
 import CalendarFeature from './components/CalendarFeature';
 import Contact from './components/Contact';
 import JoinUs from './components/JoinUs';
+import Footer from './components/Footer';
 
 function App() {
   // bg-[#FFF5E4]
@@ -20,6 +21,7 @@ function App() {
       <JoinUs />
       <Contact />
       <CalendarFeature />
+      <Footer />
     </div>
   );
 }

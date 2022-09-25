@@ -2,7 +2,10 @@ import React from 'react';
 
 const CalendarFeature = () => {
   return (
-    <div className="w-full h-full grid grid-row-2  justify-center items-center p-10">
+    <div
+      id="calendar"
+      className="w-full h-full grid grid-row-2  justify-center items-center p-10"
+    >
       <h1 className="lg:text-6xl md:text-4xl text-orange-600 sm:text-3xl text-2xl font-bold mt-5 p-10 flex justify-center">
         Shoes4Smiles Events
       </h1>

@@ -25,7 +25,7 @@ const JoinUs = () => {
     },
   ];
   return (
-    <div id="about" className="w-full h-screen py-20 px-20 mt-10">
+    <div id="join" className="w-full h-screen py-20 px-20 mt-10">
       <div className="w-full items-center mx-auto flex justify-between m-5 p-12 gap-16">
         <div className="flex flex-col justify-between p-10">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500 sm:text-3xl text-2xl font-bold py-2 mb-1">
