@@ -82,6 +82,39 @@ const NavbarSide = () => {
       url: 'calendar',
     },
   ];
+
+  const mobileLinks = [
+    {
+      id: 1,
+      title: 'Home',
+      url: 'home',
+    },
+    {
+      id: 2,
+      title: 'About',
+      url: 'about',
+    },
+    {
+      id: 3,
+      title: 'Shoe Drive',
+      url: 'shoedrive',
+    },
+    {
+      id: 4,
+      title: 'Join Us',
+      url: 'join',
+    },
+    {
+      id: 5,
+      title: 'Contact',
+      url: 'contact',
+    },
+    {
+      id: 6,
+      title: 'Calendar',
+      url: 'calendar',
+    },
+  ];
   // bg-[#FFF5E4]
 
   return (
@@ -149,7 +182,7 @@ const NavbarSide = () => {
       >
         {isMenuOpen && (
           <ul className="list-non flex flex-col justify-end items-center flex-1 ">
-            {links.map(({ id, title, url }) => (
+            {mobileLinks.map(({ id, title, url }) => (
               <Link
                 to={url}
                 smooth={true}
@@ -161,7 +194,7 @@ const NavbarSide = () => {
                 <li
                   key={id}
                   className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                    id === links.length ? 'mr-0' : 'mb-4'
+                    id === mobileLinks.length ? 'mr-0' : 'mb-4'
                   } text-[#FFF5E4]`}
                 >
                   <span className="font-bold hover:text-blue-500 pb-2 ">
