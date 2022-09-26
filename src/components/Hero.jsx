@@ -67,8 +67,8 @@ const Hero = () => {
 
   return (
     <div id="home" className="w-full h-screen z-back">
-      <div className="w-full top-[-80px]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50">
-        <div className="flex flex-col justify-center  w-full p-2">
+      <div className="w-full top-[-80px]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center pb-0 sm:pb-10 bg-black/50">
+        <div className="flex flex-col justify-center  w-full py-2">
           <div className="flex items-center justify-center">
             <img
               src={logo}
