@@ -67,7 +67,7 @@ const Hero = () => {
 
   return (
     <div id="home" className="w-full h-screen z-back">
-      <div className="w-full top-[-80px]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center pb-0 sm:pb-10 bg-black/50">
+      <div className="w-full top-[-60px] md:top-[-90px]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50">
         <div className="flex flex-col justify-center  w-full py-2">
           <div className="flex items-center justify-center">
             <img
@@ -103,7 +103,7 @@ const Hero = () => {
         pagination={{ clickable: true }}
         loop={true}
         // top-[70px]
-        className="object-cover  absolute h-screen top-[6.2%]  w-screen z-back "
+        className="object-cover  absolute h-screen top-[63px] w-screen z-back "
       >
         {images.map(({ id, src, alt }) => {
           return (
