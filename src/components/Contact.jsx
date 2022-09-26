@@ -34,12 +34,12 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen bg-orange-300 flex justify-center items-center p-3"
+      className="w-full h-full bg-orange-300 flex justify-center items-center p-3"
     >
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col h-screen max-w-[600px] w-full mt-6"
+        className="flex flex-col max-w-[600px] w-full mt-6 p-10"
       >
         <div className="pb-7 group">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500  text-3xl font-bold py-6 pb-4">
