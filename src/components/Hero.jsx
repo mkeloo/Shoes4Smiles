@@ -67,7 +67,10 @@ const Hero = () => {
 
   return (
     <div id="home" className="w-full h-screen z-back">
-      <div className="w-full top-[-60px] md:top-[-90px]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50">
+      <div
+        id="home"
+        className="w-full top-[-8.5%]  md:top-[-7.8%] 2xl:top-[-10.9%]  h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50"
+      >
         <div className="flex flex-col justify-center  w-full py-2">
           <div className="flex items-center justify-center">
             <img
@@ -83,9 +86,9 @@ const Hero = () => {
         </div>
         <div className="w-[250px] lg:hidden">
           <ul className="flex p-6 bg-[#f7aa80] mt-8 rounded-full justify-between items-center">
-            {socials.map(({ id, url, icon, text }) => {
+            {socials.map(({ id, url, icon }) => {
               return (
-                <li key={id}>
+                <li key={id} className="duration-300 hover:scale-110">
                   <a href={url} target="_blank" rel="noreferrer">
                     {icon}
                   </a>
@@ -103,16 +106,16 @@ const Hero = () => {
         pagination={{ clickable: true }}
         loop={true}
         // top-[70px]
-        className="object-cover  absolute h-screen top-[63px] w-screen z-back "
+        className="object-cover  absolute h-screen  top-[63px] w-screen z-back "
       >
         {images.map(({ id, src, alt }) => {
           return (
-            <SwiperSlide key={id} className="z-back">
-              <div className="z-back">
+            <SwiperSlide key={id} className="">
+              <div className="">
                 <img
                   src={src}
                   alt={alt}
-                  className="object-cover h-full w-full absolute -z-10"
+                  className="object-cover bg-blend-overlay	h-full w-full absolute -z-10"
                 />
               </div>
             </SwiperSlide>
