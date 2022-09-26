@@ -48,7 +48,7 @@ const CalendarFeature = () => {
         <iframe
           title="calendar"
           src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23039BE5&ctz=America%2FNew_York&showTitle=0&showNav=1&title&showPrint=0&showTz=0&showCalendars=1&showTabs=1&showDate=1&src=dWZzaG9lczRzbWlsZXNAZ21haWwuY29t&color=%23039BE5"
-          width="1000"
+          width="900"
           height="600"
           style={{
             border: '0',
