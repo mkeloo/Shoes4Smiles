@@ -123,7 +123,11 @@ const NavbarSide = () => {
       className="fixed z-front bg-[#f7aa80] shadow-lg  h-[80px] flex justify-between w-screen items-center px-2 pr-4 
     text-blue-600 font-poppins "
     >
-      <img src={logo} alt="logo" className="w-[220px] lg:ml-5 ml-2 h-[70px] " />
+      <img
+        src={logo}
+        alt="logo"
+        className="w-[220px] lg:ml-5 ml-2 h-[70px] hover:scale-110 duration-500"
+      />
 
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
