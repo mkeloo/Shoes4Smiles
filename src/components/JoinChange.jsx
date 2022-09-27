@@ -27,7 +27,7 @@ const JoinChange = () => {
   ];
   return (
     <Parallax
-      translateX={['-200px', '200px']}
+      translateX={['-100px', '100px']}
       id="join"
       className="w-full h-full flex justify-center items-center mb-8 md:mb-0 "
     >

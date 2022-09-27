@@ -8,7 +8,7 @@ const About = () => {
 
     <Parallax
       id="about"
-      translateX={['-200px', '200px']}
+      translateX={['-100px', '100px']}
       className="w-full h-full mt-20 mb-10 py-10 flex justify-center items-center "
     >
       <Parallax className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse">

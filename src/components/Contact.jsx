@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <Parallax
-      translateX={['160px', '-200px']}
+      translateX={['100px', '-200px']}
       id="contact"
       className="w-full h-full  flex justify-center items-center p-3  "
     >
