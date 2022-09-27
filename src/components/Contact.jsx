@@ -36,7 +36,7 @@ const Contact = () => {
     <Parallax
       translateX={['160px', '-200px']}
       id="contact"
-      className="w-full h-full  flex justify-center items-center p-3 bg-[#ffd5b4] "
+      className="w-full h-full  flex justify-center items-center p-3  "
     >
       <form
         ref={form}

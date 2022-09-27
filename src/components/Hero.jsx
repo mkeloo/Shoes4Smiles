@@ -124,10 +124,6 @@ const Hero = () => {
           );
         })}
       </Swiper>
-
-      {/* <div className="z-back flex flex-col justify-between w-full font-rubik h-screen text-blue-600 text-center md:text-left">
-        Insert COde After this */}
-      {/* <div>  */}
     </Parallax>
   );
 };

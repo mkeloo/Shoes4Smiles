@@ -41,7 +41,7 @@ const CalendarFeature = () => {
     <Parallax
       translateX={['-200px', '200px']}
       id="calendar"
-      className="w-full h-full grid grid-row-2 py-14 justify-center items-center bg-[#ffd5b4]"
+      className="w-full h-full grid grid-row-2 py-14 justify-center items-center "
     >
       <h1 className="lg:text-6xl md:text-4xl text-blue-500 md:px-0  text-3xl font-bold py-6 pb-4 flex justify-center">
         Shoes4Smiles Events
