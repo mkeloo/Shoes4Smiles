@@ -14,7 +14,7 @@ function App() {
   // bg-[#FFF1D8]
 
   return (
-    <div className="bg-[#ffd5b4]">
+    <div className="bg-[#ffd5b4] overflow-hidden	">
       <ParallaxProvider>
         <NavbarSide />
         <Hero />
