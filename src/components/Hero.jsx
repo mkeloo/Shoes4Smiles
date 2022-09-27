@@ -70,7 +70,6 @@ const Hero = () => {
   return (
     <Parallax id="home" className="w-full h-screen z-back ">
       <Parallax
-        translateX={['-50px', '50px']}
         id="home"
         className="w-full top-[-8.5%]  md:top-[-9.5%] 2xl:top-[-10.9%] h-[114%] lg:h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50"
       >

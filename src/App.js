@@ -14,16 +14,18 @@ function App() {
   // bg-[#FFF1D8]
 
   return (
-    <ParallaxProvider className="bg-[#ffd5b4]">
-      <NavbarSide />
-      <Hero />
-      <About />
-      <ShoeDriveChange />
-      <JoinChange />
-      <Contact />
-      <CalendarFeature />
-      <Footer />
-    </ParallaxProvider>
+    <div className="bg-[#ffd5b4]">
+      <ParallaxProvider>
+        <NavbarSide />
+        <Hero />
+        <About />
+        <ShoeDriveChange />
+        <JoinChange />
+        <Contact />
+        <CalendarFeature />
+        <Footer />
+      </ParallaxProvider>
+    </div>
   );
 }
 
