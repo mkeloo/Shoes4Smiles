@@ -34,8 +34,9 @@ const ShoeDriveChange = () => {
       translateX={['215px', '-235px']}
       translateY={['-100px', '100px']}
       id="shoedrive"
-      className="w-full h-full flex justify-center items-center bg-orange-300 rounded-3xl shadow-xl shadow-orange-200 "
+      className="w-full h-full flex justify-center items-center "
     >
+      {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
       <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-8 p-0 m-0 grid-col-reverse">
         <Swiper
           modules={[Pagination, Autoplay]}

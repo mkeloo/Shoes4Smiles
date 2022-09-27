@@ -71,7 +71,7 @@ const Hero = () => {
     <Parallax
       translateX={['196px', '-200px']}
       id="home"
-      className="w-full h-screen z-back rounded-3xl shadow-xl shadow-orange-200 "
+      className="w-full h-screen z-back "
     >
       <Parallax
         translateX={['-200px', '200px']}

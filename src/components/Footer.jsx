@@ -53,7 +53,7 @@ const Footer = () => {
         />
       </Parallax>
 
-      <Parallax translateX={['160px', '-200px']}>
+      <Parallax>
         <div className="flex justify-center">
           <img
             src={FooterImage}
