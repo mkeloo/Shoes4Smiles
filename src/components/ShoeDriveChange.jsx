@@ -30,6 +30,9 @@ const images = [
 const ShoeDriveChange = () => {
   return (
     <div
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="500"
       id="shoedrive"
       className="w-full h-full flex justify-center items-center bg-orange-300"
     >
@@ -41,6 +44,9 @@ const ShoeDriveChange = () => {
           pagination={{ clickable: true }}
           loop={true}
           className="object-contain md:w-[400px] md:h-[540px] w-[200px] h-[310px] mt-10  lg:hidden flex "
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-delay="800"
         >
           {images.map(({ id, src, alt }) => {
             return (
@@ -63,7 +69,12 @@ const ShoeDriveChange = () => {
             className="lg:w-[700px] lg:h-[750px] lg:flex hidden  md:mt-8 m-5 object-contain rounded-2xl  shadow-black"
           />
         </div>
-        <div className="flex flex-col justify-center px-10 md:max-w-[55%] max-w-full mb-5 ">
+        <div
+          className="flex flex-col justify-center px-10 md:max-w-[55%] max-w-full mb-5"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-delay="800"
+        >
           <h1 className="lg:text-6xl  md:text-4xl text-blue-500  text-3xl font-bold py-6 pb-4">
             Shoe Drive
           </h1>

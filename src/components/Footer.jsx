@@ -41,7 +41,12 @@ const Footer = () => {
           </span>
         </h1> */}
 
-      <div className="md:flex hidden justify-center">
+      <div
+        className="md:flex hidden justify-center"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="700"
+      >
         <img
           src={Footer2}
           alt=""
@@ -49,7 +54,12 @@ const Footer = () => {
         />
       </div>
 
-      <div className="">
+      <div
+        className=""
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="700"
+      >
         <div className="flex justify-center">
           <img
             src={FooterImage}
@@ -57,7 +67,12 @@ const Footer = () => {
             className="w-[250px] h-[250px] justify-center object-contain"
           />
         </div>
-        <div className="flex justify-center">
+        <div
+          className="flex justify-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-delay="700"
+        >
           <div className="flex justify-between w-full md:w-[400px] my-6 mr-2">
             {socials.map((social) => {
               const { id, url, icon, text } = social;
@@ -75,10 +90,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex hidden justify-center">
+      <div
+        className="md:flex hidden justify-center"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="700"
+      >
         <img
           src={Footer2}
-          alt=""
+          alt="/"
           className="w-[250px] h-[250px] justify-center object-contain"
         />
       </div>

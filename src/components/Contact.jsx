@@ -35,6 +35,9 @@ const Contact = () => {
     <div
       id="contact"
       className="w-full h-full bg-orange-300 flex justify-center items-center p-3"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="500"
     >
       <form
         ref={form}

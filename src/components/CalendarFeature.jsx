@@ -39,6 +39,9 @@ const CalendarFeature = () => {
   return (
     <div
       id="calendar"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="700"
       className="w-full h-full grid grid-row-2 py-14 justify-center items-center"
     >
       <h1 className="lg:text-6xl md:text-4xl text-blue-500 md:px-0  text-3xl font-bold py-6 pb-4 flex justify-center">

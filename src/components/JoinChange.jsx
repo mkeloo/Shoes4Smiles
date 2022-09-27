@@ -26,10 +26,18 @@ const JoinChange = () => {
   ];
   return (
     <div
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="500"
       id="join"
       className="w-full h-full flex justify-center items-center mb-8 md:mb-0"
     >
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse">
+      <div
+        className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="800"
+      >
         <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full pt-10 mt-5">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500 text-3xl font-bold py-6 pb-4">
             Join Us

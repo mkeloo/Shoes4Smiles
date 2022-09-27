@@ -6,9 +6,17 @@ const About = () => {
     //  md:mt-6 mt-4 issue
     <div
       id="about"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-delay="500"
       className="w-full h-full mt-20 mb-10 py-10 flex justify-center items-center"
     >
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse">
+      <div
+        className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-delay="800"
+      >
         <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full ">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500  text-3xl font-bold py-6 pb-4">
             About Us
@@ -21,7 +29,12 @@ const About = () => {
             Gainesville community.
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <div
+          className="flex justify-center items-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-delay="800"
+        >
           <img
             src={about1}
             alt="about1"

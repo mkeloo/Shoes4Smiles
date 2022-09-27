@@ -139,7 +139,7 @@ const NavbarSide = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-90}
+              offset={-80}
             >
               <li
                 key={id}
