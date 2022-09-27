@@ -68,12 +68,19 @@ const Hero = () => {
   ];
 
   return (
-    <Parallax id="home" className="w-full h-screen z-back ">
+    <Parallax
+      // translateY={['-20px', '20px']}
+      id="home"
+      className="w-full h-screen z-back "
+    >
       <Parallax
         id="home"
         className="w-full top-[-8.5%]  md:top-[-9.5%] 2xl:top-[-10.9%] h-[114%] lg:h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50"
       >
-        <div className="flex flex-col justify-center mt-8 md:mt-0  w-full py-2">
+        <Parallax
+          translateY={['-40px', '70px']}
+          className="flex flex-col justify-center mt-8 md:mt-0  w-full py-2"
+        >
           <div className="flex items-center justify-center">
             <img
               src={logo}
@@ -85,8 +92,11 @@ const Hero = () => {
             Providing shoes and other necessities to people in local,
             disadvantaged communities.
           </p>
-        </div>
-        <div className="w-[250px] lg:hidden">
+        </Parallax>
+        <Parallax
+          translateY={['-40px', '110px']}
+          className="w-[250px] lg:hidden"
+        >
           <ul className="flex p-6 bg-[#f7aa80] mt-8 rounded-full justify-between items-center">
             {socials.map(({ id, url, icon }) => {
               return (
@@ -98,7 +108,7 @@ const Hero = () => {
               );
             })}
           </ul>
-        </div>
+        </Parallax>
       </Parallax>
 
       <Swiper
