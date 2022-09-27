@@ -67,12 +67,7 @@ const Footer = () => {
             className="w-[250px] h-[250px] justify-center object-contain"
           />
         </div>
-        <div
-          className="flex justify-center"
-          data-aos="fade-down"
-          data-aos-duration="2000"
-          data-aos-delay="700"
-        >
+        <div className="flex justify-center">
           <div className="flex justify-between w-full md:w-[400px] my-6 mr-2">
             {socials.map((social) => {
               const { id, url, icon, text } = social;
