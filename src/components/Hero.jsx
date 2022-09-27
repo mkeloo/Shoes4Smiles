@@ -115,7 +115,7 @@ const Hero = () => {
                 <img
                   src={src}
                   alt={alt}
-                  className="object-cover bg-blend-overlay top-[-2.3%] md:top-[2.3%] lg:top-[-2%]	h-full w-full fixed -z-10"
+                  className="object-cover top-[-2.3%] md:top-[2.3%] lg:top-[-2%]	h-full w-full fixed -z-10"
                 />
               </div>
             </SwiperSlide>
