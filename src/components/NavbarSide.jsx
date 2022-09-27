@@ -136,7 +136,7 @@ const NavbarSide = () => {
             <Link
               to={url}
               smooth={true}
-              duration={500}
+              duration={1100}
               spy={true}
               exact="true"
               offset={-80}
@@ -190,10 +190,10 @@ const NavbarSide = () => {
               <Link
                 to={url}
                 smooth={true}
-                duration={500}
+                duration={900}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-50}
               >
                 <li
                   key={id}

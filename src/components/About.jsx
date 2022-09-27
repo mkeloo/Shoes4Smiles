@@ -1,22 +1,17 @@
 import React from 'react';
 import about1 from '../assets/Pics/about1.jpg';
+import { Parallax } from 'react-scroll-parallax';
 
 const About = () => {
   return (
     //  md:mt-6 mt-4 issue
-    <div
+
+    <Parallax
       id="about"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      data-aos-delay="500"
+      translateX={['-200px', '200px']}
       className="w-full h-full mt-20 mb-10 py-10 flex justify-center items-center"
     >
-      <div
-        className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-delay="800"
-      >
+      <Parallax className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse">
         <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full ">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500  text-3xl font-bold py-6 pb-4">
             About Us
@@ -32,8 +27,8 @@ const About = () => {
         <div
           className="flex justify-center items-center"
           data-aos="fade-down"
-          data-aos-duration="2000"
-          data-aos-delay="800"
+          data-aos-duration="1000"
+          data-aos-delay="600"
         >
           <img
             src={about1}
@@ -41,8 +36,8 @@ const About = () => {
             className="lg:w-[450px] lg:h-[500px] md:w-[260px] md:h-[310px] w-[175px] h-[210px] md:mt-8 m-5 object-cover rounded-2xl shadow-lg shadow-black"
           />
         </div>
-      </div>
-    </div>
+      </Parallax>
+    </Parallax>
   );
 };
 

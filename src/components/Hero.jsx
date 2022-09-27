@@ -5,6 +5,8 @@ import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
+import { Parallax } from 'react-scroll-parallax';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
@@ -66,26 +68,17 @@ const Hero = () => {
   ];
 
   return (
-    <div
+    <Parallax
+      translateX={['196px', '-200px']}
       id="home"
-      data-aos="fade-down"
-      data-aos-duration="1000"
-      data-aos-delay="500"
-      className="w-full h-screen z-back"
+      className="w-full h-screen z-back rounded-3xl shadow-xl shadow-orange-200 "
     >
-      <div
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-delay="900"
+      <Parallax
+        translateX={['-200px', '200px']}
         id="home"
         className="w-full top-[-8.5%]  md:top-[-9.5%] 2xl:top-[-10.9%] h-[114%] lg:h-[115.5%] absolute z-middle flex flex-col font-bold justify-center items-center text-orange-600 px-4 text-center bg-black/50"
       >
-        <div
-          className="flex flex-col justify-center mt-8 md:mt-0  w-full py-2"
-          data-aos="fade-down"
-          data-aos-duration="3000"
-          data-aos-delay="1000"
-        >
+        <div className="flex flex-col justify-center mt-8 md:mt-0  w-full py-2">
           <div className="flex items-center justify-center">
             <img
               src={logo}
@@ -111,7 +104,7 @@ const Hero = () => {
             })}
           </ul>
         </div>
-      </div>
+      </Parallax>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -140,7 +133,7 @@ const Hero = () => {
       {/* <div className="z-back flex flex-col justify-between w-full font-rubik h-screen text-blue-600 text-center md:text-left">
         Insert COde After this */}
       {/* <div>  */}
-    </div>
+    </Parallax>
   );
 };
 

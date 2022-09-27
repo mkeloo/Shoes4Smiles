@@ -3,6 +3,7 @@ import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import FooterImage from '../assets/Pics/footer.png';
 import Footer2 from './../assets/Pics/footer2.png';
+import { Parallax } from 'react-scroll-parallax';
 
 const Footer = () => {
   const socials = [
@@ -33,7 +34,7 @@ const Footer = () => {
   ];
   return (
     //
-    <div className="bg-orange-800 h-full w-full justify-between grid-cols-1 grid md:grid-cols-3 items-center  mx-auto py-4 px-3 md:py-16 md:px-4  text-gray-300">
+    <Parallax className="bg-orange-800 h-full w-full justify-between grid-cols-1 grid md:grid-cols-3 items-center  mx-auto py-4 px-3 md:py-16 md:px-4  text-gray-300">
       {/* <div className=""> */}
       {/* <h1 className="pt-1 pb-6 text-5xl lg:text-7xl font-bold logo">
           <span className="text-blue-500">
@@ -41,25 +42,18 @@ const Footer = () => {
           </span>
         </h1> */}
 
-      <div
+      <Parallax
+        translateX={['-100px', '200px']}
         className="md:flex hidden justify-center"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-delay="700"
       >
         <img
           src={Footer2}
           alt=""
           className="w-[250px] h-[250px] justify-center object-contain"
         />
-      </div>
+      </Parallax>
 
-      <div
-        className=""
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-delay="700"
-      >
+      <Parallax translateX={['160px', '-200px']}>
         <div className="flex justify-center">
           <img
             src={FooterImage}
@@ -84,20 +78,18 @@ const Footer = () => {
             })}
           </div>
         </div>
-      </div>
-      <div
+      </Parallax>
+      <Parallax
+        translateX={['-100px', '200px']}
         className="md:flex hidden justify-center"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-delay="700"
       >
         <img
           src={Footer2}
           alt="/"
           className="w-[250px] h-[250px] justify-center object-contain"
         />
-      </div>
-    </div>
+      </Parallax>
+    </Parallax>
     // </div>
   );
 };

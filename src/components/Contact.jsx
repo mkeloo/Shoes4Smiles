@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BiSmile, BiWinkSmile } from 'react-icons/bi';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 const Contact = () => {
   const [smile, setSmile] = useState(false);
@@ -32,12 +33,10 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <Parallax
+      translateX={['160px', '-200px']}
       id="contact"
-      className="w-full h-full bg-orange-300 flex justify-center items-center p-3"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      data-aos-delay="500"
+      className="w-full h-full bg-orange-300 flex justify-center items-center p-3 rounded-3xl shadow-xl shadow-orange-200 "
     >
       <form
         ref={form}
@@ -96,7 +95,7 @@ const Contact = () => {
           </span>
         </button>
       </form>
-    </div>
+    </Parallax>
   );
 };
 

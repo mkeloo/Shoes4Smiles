@@ -1,47 +1,46 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 const CalendarFeature = () => {
   const events = [
     {
       id: 1,
-      title: 'Turlington Tabling',
-      date: '2021-10-05 (Monday)',
-      time: '6:00 PM',
-      location: 'Turlington Plaza',
-      description: 'Come join us for our weekly meeting!',
+      title: 'Volunteering with Project Downtown',
+      date: '0000-00-00 (TBA)',
+      time: '0:00 AM',
+      location: 'TBA',
+      description: 'Serving the homeless population of Gainesville.',
     },
     {
       id: 2,
-      title: 'Turlington Tabling',
-      date: '2021-10-05 (Monday)',
-      time: '6:00 PM',
-      location: 'Turlington Plaza',
-      description: 'Come join us for our weekly meeting!',
+      title: 'Shoe Box Decorating',
+      date: '0000-00-00 (TBA)',
+      time: '0:00 AM',
+      location: 'TBA',
+      description: 'Decorating shoe boxes for the children and adults.',
     },
     {
       id: 3,
-      title: 'Turlington Tabling',
-      date: '2021-10-05 (Monday)',
-      time: '6:00 PM',
-      location: 'Turlington Plaza',
-      description: 'Come join us for our weekly meeting!',
+      title: 'Volunteering with Boys & Girls Club',
+      date: '0000-00-00 (TBA)',
+      time: '0:00 AM',
+      location: 'TBA',
+      description: 'Spending the day with the youth of Gainesville.',
     },
     {
       id: 4,
-      title: 'Turlington Tabling',
-      date: '2021-10-05 (Monday)',
-      time: '6:00 PM',
-      location: 'Turlington Plaza',
-      description: 'Come join us for our weekly meeting!',
+      title: 'Study Social',
+      date: '0000-00-00 (TBA)',
+      time: '0:00 AM',
+      location: 'TBA',
+      description: 'Study session with other members of the club.',
     },
   ];
 
   return (
-    <div
+    <Parallax
+      translateX={['-200px', '200px']}
       id="calendar"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      data-aos-delay="700"
       className="w-full h-full grid grid-row-2 py-14 justify-center items-center"
     >
       <h1 className="lg:text-6xl md:text-4xl text-blue-500 md:px-0  text-3xl font-bold py-6 pb-4 flex justify-center">
@@ -102,7 +101,7 @@ const CalendarFeature = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </Parallax>
   );
 };
 
