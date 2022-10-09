@@ -4,22 +4,31 @@ const CalendarFeature = () => {
   const events = [
     {
       id: 1,
+      title: 'Shoe Box Decorating',
+      date: 'October 13th, 2022 (Thursday)',
+      time: '5:00 PM',
+      location: 'Plaza of Americas',
+      description: 'Decorating shoe boxes for the children and adults.',
+    },
+    {
+      id: 2,
+      title: 'Second GBM',
+      date: 'October 18th, 2022 (Tuesday)',
+      time: '5:00 PM',
+      location: 'Reitz Union, Room 2360',
+      description: 'Second General Body Meeting',
+    },
+    {
+      id: 3,
       title: 'Volunteering with Project Downtown',
       date: '0000-00-00 (TBA)',
       time: '0:00 AM',
       location: 'TBA',
       description: 'Serving the homeless population of Gainesville.',
     },
+
     {
-      id: 2,
-      title: 'Shoe Box Decorating',
-      date: '0000-00-00 (TBA)',
-      time: '0:00 AM',
-      location: 'TBA',
-      description: 'Decorating shoe boxes for the children and adults.',
-    },
-    {
-      id: 3,
+      id: 4,
       title: 'Volunteering with Boys & Girls Club',
       date: '0000-00-00 (TBA)',
       time: '0:00 AM',
@@ -27,7 +36,7 @@ const CalendarFeature = () => {
       description: 'Spending the day with the youth of Gainesville.',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Study Social',
       date: '0000-00-00 (TBA)',
       time: '0:00 AM',
