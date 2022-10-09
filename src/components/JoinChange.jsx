@@ -27,11 +27,14 @@ const JoinChange = () => {
   ];
   return (
     <Parallax
-      translateX={['-100px', '100px']}
+      // translateX={['-100px', '100px']}
       id="join"
-      className="w-full h-full flex justify-center items-center mb-8 md:mb-0 "
+      className="w-full h-full flex justify-center items-center mb-8 md:mb-0 mt-20"
+      data-aos="fade-down"
+      data-aos-duration="600"
+      data-aos-delay="300"
     >
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 p-0 m-0 grid-col-reverse">
+      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 m-0 grid-col-reverse bg-blue-200 rounded-2xl mx-4 p-2">
         <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full pt-10 mt-5">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500 text-3xl font-bold py-6 pb-4">
             Join Us
@@ -47,7 +50,7 @@ const JoinChange = () => {
             join at any time!
           </p>
           <div className="w-full flex items-center justify-center ">
-            <ul className="md:w-[250px] w-[150px] flex md:p-6 p-4 bg-[#f7aa80] mt-4 md:mt-8 text-blue-700 rounded-full justify-between items-center duration-300 hover:scale-110">
+            <ul className="md:w-[250px] w-[150px] flex md:p-6 p-4 bg-[#f7aa80] mt-4 md:mt-8 text-blue-700 rounded-full justify-between items-center duration-300 hover:scale-110 shadow-xl">
               {socials.map(({ id, url, icon, text }) => {
                 return (
                   <li
@@ -67,6 +70,9 @@ const JoinChange = () => {
           <img
             src={Join}
             alt="about1"
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-delay="300"
             className="lg:w-[450px] lg:h-[500px] md:w-[260px] md:h-[310px] w-[175px] h-[210px] md:mt-8  m-5 object-cover rounded-2xl shadow-lg shadow-black"
           />
         </div>

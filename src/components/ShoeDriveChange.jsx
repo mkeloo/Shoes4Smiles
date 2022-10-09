@@ -8,7 +8,6 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import { Parallax } from 'react-scroll-parallax';
 
 const images = [
   {
@@ -30,14 +29,17 @@ const images = [
 
 const ShoeDriveChange = () => {
   return (
-    <Parallax
-      translateX={['215px', '-235px']}
-      translateY={['-100px', '100px']}
+    <div
+      // translateX={['215px', '-235px']}
+      // translateY={['-100px', '100px']}
+      data-aos="fade-down"
+      data-aos-duration="600"
+      data-aos-delay="300"
       id="shoedrive"
       className="w-full h-full flex justify-center items-center "
     >
       {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-8 p-0 m-0 grid-col-reverse">
+      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-8 m-0 grid-col-reverse bg-[#f7aa80] rounded-2xl mx-4 p-2">
         <Swiper
           modules={[Pagination, Autoplay]}
           autoplay={{ delay: 3000 }}
@@ -90,7 +92,7 @@ const ShoeDriveChange = () => {
           </p>
         </div>
       </div>
-    </Parallax>
+    </div>
   );
 };
 
