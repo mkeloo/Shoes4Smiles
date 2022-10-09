@@ -42,7 +42,7 @@ const Contact = () => {
       data-aos-duration="600"
       data-aos-delay="300"
     >
-      <div className="bg-[#f7aa80] rounded-2xl md:mx-0 md:p-0 mx-4 flex">
+      <div className="bg-[#f7aa80] rounded-2xl md:mx-0 md:p-0 mx-4 mt-8 flex">
         <form
           ref={form}
           onSubmit={sendEmail}

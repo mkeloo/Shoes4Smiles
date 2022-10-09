@@ -39,7 +39,7 @@ const ShoeDriveChange = () => {
       className="w-full h-full flex justify-center items-center "
     >
       {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-16 m-0 grid-col-reverse bg-[#f7aa80] rounded-2xl mx-4 p-2">
+      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-0 grid-col-reverse bg-[#f7aa80] rounded-2xl mx-4 p-2">
         <Swiper
           modules={[Pagination, Autoplay]}
           autoplay={{ delay: 3000 }}
