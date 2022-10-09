@@ -2,7 +2,6 @@ import React from 'react';
 import Join from '../assets/Pics/join.jpg';
 import { HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import { Parallax } from 'react-scroll-parallax';
 
 const JoinChange = () => {
   const socials = [
@@ -26,7 +25,7 @@ const JoinChange = () => {
     },
   ];
   return (
-    <Parallax
+    <div
       // translateX={['-100px', '100px']}
       id="join"
       className="w-full h-full flex justify-center items-center mb-8 md:mb-0 mt-20"
@@ -34,7 +33,7 @@ const JoinChange = () => {
       data-aos-duration="600"
       data-aos-delay="300"
     >
-      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-6 m-0 grid-col-reverse bg-blue-200 rounded-2xl mx-4 p-2">
+      <div className="w-full md:flex md:grid-cols-2 md:p-8 md:m-16 m-0 grid-col-reverse bg-blue-200 rounded-2xl mx-4 p-2">
         <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full pt-10 mt-5">
           <h1 className="lg:text-6xl md:text-4xl text-blue-500 text-3xl font-bold py-6 pb-4">
             Join Us
@@ -77,7 +76,7 @@ const JoinChange = () => {
           />
         </div>
       </div>
-    </Parallax>
+    </div>
   );
 };
 
